@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: AIDeputy
+  ai:
+    openai:
+      api-key: dummy
+      base-url: http://10.157.228.229:1234
+      chat:
+        options.model: gemma-4-26b-a4b-it-claude-opus-distill-v2
+  config:
+    import:
+    - optional:classpath:.env.yaml
+
+server:
+  compression:
+    enabled: false
